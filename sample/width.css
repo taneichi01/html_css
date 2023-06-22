@@ -1,9 +1,0 @@
-.parent {
-    width: auto;
-    background-color: yellow;
-}
-.chaild {
-    width: 50%;
-    min-width: 300px;
-    background-color: orange;
-}
