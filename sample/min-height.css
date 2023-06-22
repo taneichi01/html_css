@@ -1,0 +1,13 @@
+#one {
+    height: aouto;
+    background-color: yellow;
+}
+#two {
+    height: aouto;
+    background-color: orange;
+}
+#three {
+    height: aouto;
+    min-height: 100px;
+    background-color: pink;
+}
