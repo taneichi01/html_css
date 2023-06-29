@@ -16,10 +16,34 @@ p {
   font-weight: 100;
   font-style: normal;
   font-size: 14px;
-
 }
 
+.section_title {
+  /* フォントサイズ36px */
+  font-size: 36px;
 
+  /* フォントの太さ600 標準は400です */
+  font-weight: 600;
+}
+
+ /* section_titleに擬似要素を追加 */
+.section_title::after {
+
+ /* 疑似要素はデフォルトでインライン要素のためブロック要素に変更 */
+ display: block;
+
+/* サブタイトル文字の大きさや余白を設定 */
+font-size: 14px;
+font-weight: 400;
+padding: 16px 0 16px;
+
+/* 下線の幅を100pに設定 */
+width: 100px;
+
+/* 下線を直線・1px・黒色に設定 */
+border-bottom: solid 1px #000000;
+
+}
 
 /* ----------------------------------------------- ナビゲーションメニュー */
 .navbar_brand_logo {
@@ -120,13 +144,21 @@ p {
 
 
 /* ----------------------------------------------- アバウト */
+ /* aboutクラスのあとに"私たちについて"の文字を追加  */
+ .about::after {
+ content: "私たちについて";
+ }
 
-
-
+ .about_us_bg {
+  background-color: #FFE6A5;
+ }
 
 
 /* ----------------------------------------------- ギャラリー */
-
+.galler::after {
+  content: "ギャラリー";
+  margin: 0 auto 0;
+}
 
 
 
