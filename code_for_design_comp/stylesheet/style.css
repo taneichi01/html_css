@@ -195,8 +195,32 @@ border-bottom: solid 1px #000000;
   margin: 0 auto 0;
   border-bottom: solid 1px #FFFFFF;
 }
+/* 白い背景色の高さを固定 */
+.h_420 {
+  height: 420px;
+  position: relative;
+}
+/* レビューの画像を修正 */
+.reviewer_img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+/* 星のアイコン画像です */
+.star_img {
+  width: 25px;
+  height: 25px;
+}
 
-
+/* 詳細ボタンを下部に固定 */
+.fix_bottom {
+  position: absolute;
+  width: 80px;
+  height: 44px;
+  left: 24px;
+  bottom: 24px;
+}
 
 /* ----------------------------------------------- アクセス */
 
