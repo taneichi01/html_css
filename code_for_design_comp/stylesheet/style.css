@@ -26,22 +26,22 @@ p {
   font-weight: 600;
 }
 
- /* section_titleに擬似要素を追加 */
+/* section_titleに擬似要素を追加 */
 .section_title::after {
 
- /* 疑似要素はデフォルトでインライン要素のためブロック要素に変更 */
- display: block;
+  /* 疑似要素はデフォルトでインライン要素のためブロック要素に変更 */
+  display: block;
 
-/* サブタイトル文字の大きさや余白を設定 */
-font-size: 14px;
-font-weight: 400;
-padding: 16px 0 16px;
+  /* サブタイトル文字の大きさや余白を設定 */
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px 0 16px;
 
-/* 下線の幅を100pに設定 */
-width: 100px;
+  /* 下線の幅を100pに設定 */
+  width: 100px;
 
-/* 下線を直線・1px・黒色に設定 */
-border-bottom: solid 1px #000000;
+  /* 下線を直線・1px・黒色に設定 */
+  border-bottom: solid 1px #000000;
 
 }
 
@@ -116,6 +116,7 @@ border-bottom: solid 1px #000000;
   content: url(../img/logoSymbol_White.png);
   display: block;
 }
+
 /* スマートフォン画面幅（画面幅が最大375pxまで）の場合、以下のスタイルを適用。 */
 @media screen and (max-width:375px) {
   .my_carousel_caption {
@@ -124,8 +125,9 @@ border-bottom: solid 1px #000000;
     font-size: 27px;
   }
 }
- /* carousel-itemの高さを32remに指定 */
- .carousel-item {
+
+/* carousel-itemの高さを32remに指定 */
+.carousel-item {
   height: 32rem;
 }
 
@@ -144,14 +146,14 @@ border-bottom: solid 1px #000000;
 
 
 /* ----------------------------------------------- アバウト */
- /* aboutクラスのあとに"私たちについて"の文字を追加  */
- .about::after {
- content: "私たちについて";
- }
+/* aboutクラスのあとに"私たちについて"の文字を追加  */
+.about::after {
+  content: "私たちについて";
+}
 
- .about_us_bg {
+.about_us_bg {
   background-color: #FFE6A5;
- }
+}
 
 
 /* ----------------------------------------------- ギャラリー */
@@ -195,11 +197,13 @@ border-bottom: solid 1px #000000;
   margin: 0 auto 0;
   border-bottom: solid 1px #FFFFFF;
 }
+
 /* 白い背景色の高さを固定 */
 .h_420 {
   height: 420px;
   position: relative;
 }
+
 /* レビューの画像を修正 */
 .reviewer_img {
   width: 48px;
@@ -207,6 +211,7 @@ border-bottom: solid 1px #000000;
   border-radius: 50%;
   margin-right: 16px;
 }
+
 /* 星のアイコン画像です */
 .star_img {
   width: 25px;
@@ -223,9 +228,75 @@ border-bottom: solid 1px #000000;
 }
 
 /* ----------------------------------------------- アクセス */
-
-
-
-
+.access::after {
+  content: "アクセス";
+  margin: 0 auto 0;
+}
 
 /* ----------------------------------------------- フッター */
+#footer {
+  background-color: #fafafa;
+}
+
+/* position: absoluteで下から協力で固定 */
+.copy_right {
+  font-size: 14px;
+  position: absolute;
+  bottom: 1rem;
+  left: 12px;
+  display: flex;
+}
+
+.copy_right>p {
+  margin-right: 5rem;
+  margin-bottom: 0;
+}
+
+.copy_right>img.sns_img {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+/* restaurant_info直下の子要素pタグ全てに適用される */
+.restaurant_info p {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.restaurant_info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+.footer_brand_logo {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer_text {
+  font-size: 24px;
+  font-family: "Lora", serif;
+}
+
+@media screen and (max-width: 991px) {	
+  .footer_text,	
+  .copy_right {	
+  margin-top: 2rem;	
+  text-align: center;	
+  position: relative;	
+  }	
+  .copy_right>p,img {	
+  margin-right: 1rem;	
+  font-size: 14px;	
+  margin: 0;	
+  line-height: 35px;	
+  }	
+  }
